@@ -28,7 +28,7 @@ App::resolving('payum.builder', function(\Payum\Core\PayumBuilder $payumBuilder)
 <?php
 // app/controllers/PaymentController.php
 
-use Payum\LaravelPackage\Controller\PayumController;
+use BracketSpace\PayumLaravelPackage\Controller\PayumController;
 
 cclass PaymentController extends PayumController
 {
@@ -85,7 +85,7 @@ App::resolving('payum.builder', function(\Payum\Core\PayumBuilder $payumBuilder)
 <?php
 // app/controllers/StripeController.php
 
-use Payum\LaravelPackage\Controller\PayumController;
+use BracketSpace\PayumLaravelPackage\Controller\PayumController;
 
 cclass StripeController extends PayumController
 {
@@ -134,7 +134,7 @@ App::resolving('payum.builder', function(\Payum\Core\PayumBuilder $payumBuilder)
 <?php
 // app/controllers/StripeController.php
 
-use Payum\LaravelPackage\Controller\PayumController;
+use BracketSpace\PayumLaravelPackage\Controller\PayumController;
 
 cclass StripeController extends PayumController
 {
@@ -186,7 +186,7 @@ App::resolving('payum.builder', function(\Payum\Core\PayumBuilder $payumBuilder)
 <?php
 // app/controllers/OmnipayController.php
 
-use Payum\LaravelPackage\Controller\PayumController;
+use BracketSpace\PayumLaravelPackage\Controller\PayumController;
 
 cclass OmnipayController extends PayumController
 {

@@ -19,7 +19,7 @@ Register a storage for it
 ```php
 // bootstrap/start.php
 
-use Payum\LaravelPackage\Storage\EloquentStorage;
+use BracketSpace\PayumLaravelPackage\Storage\EloquentStorage;
 
 App::resolving('payum.builder', function(\Payum\Core\PayumBuilder $payumBuilder) {
     $payumBuilder
@@ -30,7 +30,7 @@ App::resolving('payum.builder', function(\Payum\Core\PayumBuilder $payumBuilder)
 
 ## Models 
 
-The package provides two models `Payum\LaravelPackage\Model\Token` and `Payum\LaravelPackage\Model\Payment` which may be reused directly or extend with some custom logic.
+The package provides two models `BracketSpace\PayumLaravelPackage\Model\Token` and `BracketSpace\PayumLaravelPackage\Model\Payment` which may be reused directly or extend with some custom logic.
 Here's the models schemas:
 
 Payment:
@@ -59,8 +59,8 @@ The storage could be registered like this
 ```php
 // bootstrap/start.php
 
-use Payum\LaravelPackage\Storage\EloquentStorage;
-use Payum\LaravelPackage\Model\Payment;
+use BracketSpace\PayumLaravelPackage\Storage\EloquentStorage;
+use BracketSpace\PayumLaravelPackage\Model\Payment;
 
 App::resolving('payum.builder', function(\Payum\Core\PayumBuilder $payumBuilder) {
     $payumBuilder
@@ -93,8 +93,8 @@ The token storage could be registered like this
 ```php
 // bootstrap/start.php
 
-use Payum\LaravelPackage\Storage\EloquentStorage;
-use Payum\LaravelPackage\Model\Token;
+use BracketSpace\PayumLaravelPackage\Storage\EloquentStorage;
+use BracketSpace\PayumLaravelPackage\Model\Token;
 
 App::resolving('payum.builder', function(\Payum\Core\PayumBuilder $payumBuilder) {
     $payumBuilder

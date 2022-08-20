@@ -20,7 +20,7 @@ $payum = (new PayumBuilder())
         'factory' => 'klarna_checkout'
         'merchant_id' => '',
         'secret' => '',
-        'payum.action.render_template' => new \Payum\LaravelPackage\Action\RenderTemplateAction(), // Activates blade templating
+        'payum.action.render_template' => new \BracketSpace\PayumLaravelPackage\Action\RenderTemplateAction(), // Activates blade templating
         'payum.template.authorize' => 'page.klarna-checkout-authorize', // Your custom blade-template
     ])
     ->getPayum()

@@ -1,13 +1,14 @@
 <?php
-namespace Payum\LaravelPackage\Action;
+
+namespace BracketSpace\PayumLaravelPackage\Action;
 
 use Illuminate\Support\Facades\View;
 use Payum\Core\Action\ActionInterface;
 use Payum\Core\Exception\RequestNotSupportedException;
 use Payum\Core\Request\RenderTemplate;
 
-class RenderTemplateAction implements ActionInterface {
-
+class RenderTemplateAction implements ActionInterface
+{
 	/**
 	 * {@inheritDoc}
 	 */

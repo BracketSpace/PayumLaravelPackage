@@ -8,7 +8,7 @@ We can use it later to get payment status, details and any other information.
 <?php
 
 use Payum\Core\Request\GetHumanStatus;
-use Payum\LaravelPackage\Controller\PayumController;
+use BracketSpace\PayumLaravelPackage\Controller\PayumController;
 use Symfony\Component\HttpFoundation\Request;
 
 class PaymentController extends PayumController

@@ -38,11 +38,18 @@
         }
     ],
     "require": {
-        "php": ">=5.5.0",
-        "illuminate/container": "^4|^5.1|^6.0|^7.0|^8.0",
-        "illuminate/routing": "^4|^5.1|^6.0|^7.0|^8.0",
-        "illuminate/support": "^4|^5.1|^6.0|^7.0|^8.0",
-        "payum/core": "^1"
+        "php": ">=8.0",
+        "illuminate/container": "^9.0",
+        "illuminate/routing": "^9.0",
+        "illuminate/support": "^9.0",
+        "payum/core": "^1.7"
+    },
+    "require-dev": {
+        "symfony/http-client": "^6.0",
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpstan/phpstan": "^1.8",
+        "nunomaduro/larastan": "^2.1",
+        "orchestra/testbench": "^7.6"
     },
     "suggest": {
         "payum/paypal-express-checkout-nvp": "If you want to use paypal express checkout nvp gateway",
@@ -54,14 +61,13 @@
         "payum/stripe": "If you want to use omnipay provided gateways"
     },
     "autoload": {
-        "psr-0": { "Payum\\LaravelPackage": "src/" }
+        "psr-4": {
+            "BracketSpace\\PayumLaravelPackage\\": "src/"
+        }
     },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
         }
-    },
-    "config": {
-        "bin-dir": "bin"
     }
 }
