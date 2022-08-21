@@ -85,10 +85,10 @@ class PayumServiceProvider extends ServiceProvider implements DeferrableProvider
 					'payum.action.obtain_credit_card' => 'payum.action.obtain_credit_card',
 				])
 				->setGenericTokenFactoryPaths([ // @phpstan-ignore-line
-					'capture' => 'payum_capture_do',
-					'notify' => 'payum_notify_do',
-					'authorize' => 'payum_authorize_do',
-					'refund' => 'payum_refund_do',
+					'capture' => 'payum.capture',
+					'notify' => 'payum.notify',
+					'authorize' => 'payum.authorize',
+					'refund' => 'payum.refund',
 				])
 			;
 

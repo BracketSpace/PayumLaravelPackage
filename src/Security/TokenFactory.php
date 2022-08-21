@@ -2,6 +2,8 @@
 
 namespace BracketSpace\PayumLaravelPackage\Security;
 
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
 use Payum\Core\Security\AbstractTokenFactory;
 
 class TokenFactory extends AbstractTokenFactory
@@ -14,6 +16,8 @@ class TokenFactory extends AbstractTokenFactory
 	 */
 	protected function generateUrl($path, array $parameters = [])
 	{
-		return \URL::route($path, $parameters);
+		return Route::has($path)
+			? URL::route($path, $parameters)
+			: URL::to($path, $parameters);
 	}
 }
