@@ -64,6 +64,7 @@ class PayumServiceProvider extends ServiceProvider implements DeferrableProvider
 			$builder = new PayumBuilder();
 
 			$builder
+				->addDefaultStorages() // TODO: replace with eloquent
 				->setTokenFactory(
 					fn(
 						StorageInterface $tokenStorage,
